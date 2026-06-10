@@ -18,6 +18,6 @@ COPY scrapyd.conf /etc/scrapyd/
 COPY supervisord.conf /etc/
 
 VOLUME /scrapyd
-EXPOSE 6800
+EXPOSE 8000
 
 CMD ["/usr/bin/supervisord", "-c", "/etc/supervisord.conf"]
