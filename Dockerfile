@@ -9,7 +9,6 @@ RUN set -ex && apk --no-cache --virtual .build-deps add build-base g++ bash curl
 RUN ln -sf /usr/share/zoneinfo/America/Mexico_City /etc/localtime
 RUN echo "America/Mexico_City" > /etc/timezone
 
-RUN pip install pip==20.2.4
 COPY ./requirements.txt /
 RUN pip install -r requirements.txt
 
